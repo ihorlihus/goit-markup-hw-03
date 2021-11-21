@@ -27,6 +27,45 @@ body {
 }
 
 /* -----------HEADER------------- */
+.container {
+  width: 1400px;
+  height: 80px;
+  padding-left: 0px;
+  padding-right: 200px;
+}
+
+.header > .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 5px solid tomato; */
+  /* background-color: turquoise; */
+}
+
+.logo {
+  margin-right: 93px;
+  margin-left: 215px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-hb {
+  display: flex;
+}
+
+.cont-header-psn {
+  margin-left: auto;
+}
+
+.contacts-header-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .header-link {
   font-weight: 500;
@@ -78,6 +117,7 @@ body {
   top: 80px;
 
   background: var(--secondary-bg-color);
+  margin-bottom: 50px;
 }
 
 .hero-title {
@@ -110,9 +150,39 @@ body {
   height: 50px;
   left: 700px;
   top: 430px;
+
+  border-radius: 4px;
+  margin-top: 40px;
+}
+/* -----------BENEFITS------------ */
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: tomato;
+  width: 1170px;
+  height: 200px;
+  /* margin left: 215px; */
+  padding: 100px;
+}
+
+.hyhy {
+  display: flex;
+}
+
+.benefits-item {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* ------------Specials------------ */
+/* .specials {
+  display: flex;
+  width: 1170px;
+  height: 101px;
+  left: 215px;
+  top: 774px;
+  margin-top: 100px;
+} */
 
 .specials-title {
   font-weight: bold;
