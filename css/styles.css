@@ -34,6 +34,7 @@ img {
   width: 1600px;
   margin: 0;
   padding: 0;
+
   /* background-color: violet; */
 }
 /* -----------HEADER------------- */
@@ -43,6 +44,7 @@ img {
   flex-direction: row;
   align-items: center;
   height: 80px;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -146,6 +148,7 @@ img {
   color: var(--title-color);
 
   background-color: var(--button-color);
+  width: 1600px;
 
   position: absolute;
   width: 200px;
@@ -281,6 +284,7 @@ img {
 /* ----------FOOTER------------ */
 
 .footer {
+  width: 1600px;
   background-color: var(--secondary-bg-color);
 }
 
@@ -370,4 +374,44 @@ img {
 }
 .ptf-link {
   color: var(--main-text-color);
+}
+
+/* ------------BLOKS------------ */
+
+.pf-btn-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 34px;
+
+  /* background-color: yellow; */
+}
+
+.pf-btn-item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.suggestions {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* background-color: wheat; */
+}
+
+.suggestions-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestions-item {
+  width: 370px;
+  height: 404px;
+}
+
+.suggestions-item:not(:nth-child(3n + 1)) {
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
