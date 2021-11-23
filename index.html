@@ -13,8 +13,9 @@
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
-            <header class="header">
-                <div class="container">
+        <div class="container">
+            <header>
+                <div class="cont-header">                
                     <a class="link logo" href="https://ihorlihus.github.io/goit-markup-hw-02/" target="_blank" rel="noopener noreferrer">
                         WebStudio</a>
                         <ul class="list navigation">
@@ -38,8 +39,8 @@
             <section >
                 <h2 class="visually-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, consequatur.
                 </h2>
-                <div class="benefits">
-                <ul class="list hyhy">
+                <div class="benefits-container">
+                <ul class="list benefits-list">
                     <li class="benefits-item">
                         <h3 class="specials-title">Внимание к деталям</h3>
                         <p class="specials-text">Идейные соображения, а также 
@@ -64,73 +65,78 @@
             </div>
             </section>
             <section>
-                <div class="specials">
-                    <div class="specials-item">
-                        <h2>Чем мы занимаемся</h2>
-                            <ul class="list">
-                                <li>
-                                    <img src="./images/img1.jpg" 
+                <div class="specials-container">         
+                    <h2 class="works-title">Чем мы занимаемся</h2>
+                        <ul class="list specials-list">
+                            <li class="specials-item">
+                                <img 
+                                    src="./images/img1.jpg" 
                                     alt="написание кода" 
                                     width="370" 
                                     height="294">
                                 </li>
-                    </div>
-                    <div class="specials-item">
-                                <li>
-                                    <img src="./images/img2.jpg" 
+                            <li class="specials-item">
+                                <img 
+                                    src="./images/img2.jpg" 
                                     alt="адаптация сайтов к мобильным устройствам" 
                                     width="370" 
                                     height="294">
                                 </li>
-                    </div>
-                    <div class="specials-item">
-                                <li>
-                                    <img src="./images/img3.jpg" 
+                            <li class="specials-item">
+                                <img 
+                                    src="./images/img3.jpg" 
                                     alt="стилизация сайта" 
                                     width="370" 
                                     height="294">
                                 </li>
-                    </div>
-                    </ul>
+                        </ul>
                 </div>
             </section>
             <section>
-                <h2 class="team-title">Наша команда</h2>
-                    <ul class="list">
-                        <li>
-                            <img src="./images/teammate1.jpg" 
-                            alt="сотрудник студии"
-                            width="270"
-                            height="260">
-                            <h3 class="name">Игорь Демьяненко</h3>
-                            <p class="position" lang="en">Product Designer</p>
-                        </li>
-                        <li>
-                            <img src="./images/teammate2.jpg" 
-                            alt="сотрудник студии" 
-                            width="270" 
-                            height="260">
-                            <h3 class="name">Ольга Репина</h3>
-                            <p class="position" lang="en">Frontend Developerr</p>
-                        </li>
-                        <li>
-                            <img src="./images/teammate3.jpg" 
-                            alt="сотрудник студии" 
-                            width="270" 
-                            height="260">
-                            <h3 class="name">Николай Тарасов</h3>
-                            <p class="position" lang="en">Marketingr</p>
-                        </li>
-                        <li>
-                            <img src="./images/teammate1.jpg" 
-                            alt="сотрудник студии" 
-                            width="270" 
-                            height="260">
-                            <h3 class="name">Михаил Ермаков</h3>
-                            <p class="position" lang="en">UI Designer</p>
-                        </li>
-                    
-                </ul>
+                <div class="team-container">
+                    <h2 class="team-title">Наша команда</h2>
+                        <ul class="list team-container-list">
+                            <li class="team-names-container">
+                                    <img
+                                        src="./images/teammate1.jpg" 
+                                        alt="сотрудник студии"
+                                        width="270"
+                                        height="260">                                        
+                                            <h3 class="name">Игорь Демьяненко</h3>
+                                            <p class="position" lang="en">Product Designer</p>
+                            </li>
+                            <li class="team-names-container">
+                                    <img 
+                                        src="./images/teammate2.jpg" 
+                                        alt="сотрудник студии" 
+                                        width="270" 
+                                        height="260">
+                                            <h3 class="name">Ольга Репина</h3>
+                                            <p class="position" lang="en">Frontend Developerr</p>
+                            </li>
+                            <li class="team-names-container">
+                                <img 
+                                    src="./images/teammate3.jpg" 
+                                    alt="сотрудник студии" 
+                                    width="270" 
+                                    height="260">
+                                    <div class="name-cont">
+                                        <h3 class="name">Николай Тарасов</h3>
+                                    </div>
+                                    <div class="position-cont"></div>
+                                        <p class="position" lang="en">Marketingr</p>
+                            </li>
+                            <li class="team-names-container">
+                                    <img 
+                                        src="./images/teammate1.jpg" 
+                                        alt="сотрудник студии" 
+                                        width="270" 
+                                        height="260">
+                                    <h3 class="name">Михаил Ермаков</h3>
+                                <p class="position" lang="en">UI Designer</p>
+                            </li>                        
+                        </ul>
+                </div>
             </section>
         </main>
         <footer class="footer">
@@ -156,6 +162,7 @@
                     </li>
                 </ul>
             </address>
-        </footer>    
+        </footer>
+        </div>   
     </body>
 </html>
