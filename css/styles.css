@@ -18,6 +18,16 @@ body {
   background-color: var(--main-bg-color);
 }
 
+*,
+p,
+h1,
+h2,
+h3,
+h4,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 .list {
   list-style: none;
 }
@@ -31,24 +41,31 @@ img {
 }
 
 .container {
-  width: 1600px;
-  margin: 0;
-  padding: 0;
-
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0, auto;
   /* background-color: violet; */
 }
+
+.section {
+  padding-top: 94px;
+}
+
 /* -----------HEADER------------- */
+
+.border {
+  border-bottom: 1px solid #ececec;
+}
 
 .cont-header {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 80px;
-  border-bottom: 1px solid #ececec;
-}
 
-.logo {
-  margin-left: 215px;
+  margin: 0, auto;
+  justify-content: space-between;
 }
 
 .navigation {
@@ -64,12 +81,22 @@ img {
 
 .contacts-hb {
   display: flex;
-  margin: 0 215px 0 331px;
+  margin: 0, 215px, 0, auto;
   padding: 0;
+}
+
+.contacts-header-item {
+  width: 122px;
+  height: 16px;
 }
 
 .contacts-header-item:not(:first-child) {
   padding-left: 50px;
+}
+
+.contacts-header {
+  width: 122px;
+  height: 16px;
 }
 
 .header-link {
@@ -116,59 +143,46 @@ img {
 
 /* -------------HERO-------------- */
 .hero {
-  height: 600px;
-  left: 0px;
-  top: 80px;
+  width: 1200px;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   background: var(--secondary-bg-color);
-  margin-bottom: 50px;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--title-color);
-
-  position: absolute;
+  margin: auto;
   width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
 }
 
 .hero-btn {
   font-family: inherit;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--title-color);
 
   background-color: var(--button-color);
-  width: 1600px;
 
-  position: absolute;
   width: 200px;
   height: 50px;
   left: 700px;
   top: 430px;
 
   border-radius: 4px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 /* -----------BENEFITS------------ */
 .benefits-container {
   display: flex;
   flex-wrap: wrap;
-
-  /* background-color: tomato; */
-  width: 1170px;
-  height: 101px;
-  margin-left: 215px;
-  margin-top: 93px;
+  justify-content: center;
 }
 
 .benefits-list {
@@ -182,18 +196,12 @@ img {
   height: 101px;
 }
 
-/* ------------Specials------------ */
-
-.specials-container {
-  width: 1170px;
-  height: 386px;
-  margin: 94px 215px;
-}
+/* ------------SPECIALS------------ */
 
 .specials-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  justify-content: center;
 }
 
 .specials-item:not(:last-child) {
@@ -232,19 +240,10 @@ img {
 }
 /* ----------OUR TEAM--------- */
 
-.team-container {
-  width: 1600px;
-  height: 648px;
-  background-color: var(--accent-bg-color);
-  margin-top: 94px;
-}
-
 .team-container-list {
-  display: flex;
+  display: flexbox;
+  justify-content: center;
   margin-top: 50px;
-  margin-right: 215px;
-  margin-left: 215px;
-  margin-bottom: 94px;
 }
 
 .team-names-container {
@@ -254,7 +253,7 @@ img {
   display: inline-block;
 }
 
-.team-container-list:not(:last-child) {
+.team-names-container:not(:last-child) {
   padding-right: 30px;
 }
 
@@ -284,13 +283,31 @@ img {
 /* ----------FOOTER------------ */
 
 .footer {
-  width: 1600px;
+  width: 1200px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: 94px;
   background-color: var(--secondary-bg-color);
 }
 
+.adress-f-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.f-contacts {
+  display: flex;
+  /* color: var(--second-text-color); */
+}
+.f-contacts:not(:last-child) {
+  padding-bottom: 9px;
+}
+
 .footer-address {
+  display: flex;
   font-style: normal;
   line-height: 1.71;
+  padding-top: 9px;
 
   color: var(--title-color);
 }
@@ -300,6 +317,7 @@ img {
 }
 
 /* ----------PORTFOLIO------------ */
+
 .pf-btn {
   font-family: inherit;
   font-size: 16px;
@@ -315,6 +333,7 @@ img {
 
   background: var(--accent-bg-color);
   border-radius: 4px;
+  border: 0;
 }
 .pf-btn:focus,
 .pf-btn:hover {
@@ -329,6 +348,7 @@ img {
 
   color: var(--title-color);
   background-color: var(--button-color);
+  outline: none;
 }
 
 .logo-blue {
@@ -382,21 +402,13 @@ img {
   display: flex;
   justify-content: center;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 
   /* background-color: yellow; */
 }
 
 .pf-btn-item:not(:first-child) {
   margin-left: 8px;
-}
-
-.suggestions {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-
-  /* background-color: wheat; */
 }
 
 .suggestions-list {
