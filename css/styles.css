@@ -185,10 +185,6 @@ img {
   border: none;
 }
 /* -----------BENEFITS------------ */
-.benefits-container {
-  /* display: flex;
-  flex-wrap: wrap; */
-}
 
 .benefits-list {
   display: flex;
@@ -196,10 +192,7 @@ img {
 }
 
 .benefits-item {
-  display: flex;
-  flex-wrap: wrap;
   width: 270px;
-  height: 101px;
 }
 
 /* ------------SPECIALS------------ */
@@ -207,10 +200,6 @@ img {
 .specials-list {
   display: flex;
   justify-content: space-between;
-}
-
-.specials-item:not(:last-child) {
-  padding-right: 30px;
 }
 
 .specials-title {
@@ -309,7 +298,7 @@ img {
 .adress-f-list {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .f-contacts {
   display: flex;
@@ -323,7 +312,6 @@ img {
   display: flex;
   font-style: normal;
   line-height: 1.71;
-  padding-top: 9px;
 
   color: var(--title-color);
 }
